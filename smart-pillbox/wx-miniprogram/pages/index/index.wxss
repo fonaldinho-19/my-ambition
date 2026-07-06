@@ -1,0 +1,107 @@
+/* pages/index/index.wxss */
+
+.container {
+  padding: 20rpx 30rpx 40rpx;
+  min-height: 100vh;
+}
+
+/* 标题 */
+.header {
+  text-align: center;
+  padding: 40rpx 0 30rpx;
+}
+.title {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.subtitle {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+/* 卡片通用 */
+.card-row {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+}
+.card {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.card-row .card {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.card-icon { font-size: 48rpx; margin-bottom: 10rpx; display: block; }
+.card-value {
+  display: block;
+  font-size: 56rpx;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.card-value.big { font-size: 72rpx; }
+.weight-row { display: flex; justify-content: center; align-items: baseline; }
+.card-unit {
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 8rpx;
+}
+.card-label {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 8rpx;
+}
+
+/* 卡片颜色 */
+.card-temp { border-top: 6rpx solid #e74c3c; }
+.card-humi { border-top: 6rpx solid #3498db; }
+.card-weight { border-top: 6rpx solid #27ae60; }
+
+/* 吃药记录 */
+.section-title {
+  display: block;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20rpx;
+}
+.med-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.med-item:last-child { border-bottom: none; }
+.med-time { font-size: 28rpx; color: #333; }
+.med-status { font-size: 28rpx; }
+.med-item.taken .med-status { color: #27ae60; }
+.med-item.missed .med-status { color: #e74c3c; }
+
+.empty-tip {
+  text-align: center;
+  color: #ccc;
+  font-size: 26rpx;
+  padding: 40rpx 0;
+}
+
+/* 更新时间 */
+.update-time {
+  text-align: center;
+  font-size: 24rpx;
+  color: #bbb;
+  margin-top: 20rpx;
+}
+.refresh-btn {
+  color: #3498db;
+  margin-left: 20rpx;
+}

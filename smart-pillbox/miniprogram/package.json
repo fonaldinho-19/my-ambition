@@ -1,0 +1,24 @@
+﻿{
+  "name": "smart-pillbox-miniprogram",
+  "version": "1.0.0",
+  "description": "智能药盒微信小程序",
+  "scripts": {
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "dev:h5": "uni",
+    "build:h5": "uni build"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "@dcloudio/uni-app": "*",
+    "@dcloudio/uni-mp-weixin": "*",
+    "@dcloudio/uni-h5": "*",
+    "@dcloudio/uni-components": "*"
+  },
+  "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "*",
+    "@dcloudio/uni-cli-shared": "*",
+    "vite": "^5.4.0",
+    "sass": "^1.70.0"
+  }
+}
